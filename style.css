@@ -34,7 +34,7 @@ html {
 }
 
 .container {
-  height: 600px;
+  height: 800px;
   width: 600px;
   background-color: #282c34;
   padding: 32px;
@@ -66,7 +66,8 @@ html {
   font-size: 1.8rem;
   text-transform: uppercase;
   font-family: "Bungee", sans-serif;
-  padding: 24px;
+  padding: 16px;
+  cursor: pointer;
   background: unset;
   border: unset;
   outline: unset;
@@ -74,4 +75,45 @@ html {
 
 .header-btn.clear{
 color: #fb6194;
+}
+
+.add{
+  padding: 16px;
+}
+
+.add-form{
+  display: flex;
+  align-items: flex-start;
+}
+
+.add-input{
+  background: unset;
+  border: unset;
+  padding: 0 64px;
+  margin-right: 10px;
+  flex: 1;
+  outline: unset;
+  border-bottom: 1px solid hsl(193, 95%, 30%);
+font-family: 'Open Sans', sans-serif;
+font-size: 16px;
+text-transform: lowercase;
+}
+
+.add-input:focus{
+  color: hsl(0, 0%, 95%);
+}
+
+.add-btn{
+  font-size: 1.6rem;
+  padding: 0 12px;
+  border-radius: 4px;
+  color: #282c34;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-family: 'Bungee',sans-serif;
+background: var(--main-blue-color);
+border:unset;
+outline: unset;
 }
