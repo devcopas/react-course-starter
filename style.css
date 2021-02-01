@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@300;400;600;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -45,6 +45,7 @@ html {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 }
 
 .header {
@@ -73,47 +74,86 @@ html {
   outline: unset;
 }
 
-.header-btn.clear{
-color: #fb6194;
+.header-btn.main-blue-color:hover {
+  color: hsl(193, 95%, 50%);
 }
 
-.add{
+.header-btn.clear {
+  color: #fb6194;
+}
+
+.header-btn.clear {
+  color: #fb6194;
+}
+
+.header-btn.clear:hover {
+  color: hsl(340, 95%, 63%);
+}
+
+.add {
   padding: 16px;
 }
 
-.add-form{
+.add-form {
   display: flex;
-  align-items: flex-start;
+  align-items: flex-end;
 }
 
-.add-input{
+.add-input {
   background: unset;
   border: unset;
   padding: 0 64px;
   margin-right: 10px;
   flex: 1;
   outline: unset;
-  border-bottom: 1px solid hsl(193, 95%, 30%);
-font-family: 'Open Sans', sans-serif;
-font-size: 16px;
-text-transform: lowercase;
+  border-bottom: 1px solid hsl(193, 95%, 20%);
 }
 
-.add-input:focus{
+
+
+.add-input:focus {
   color: hsl(0, 0%, 95%);
 }
 
-.add-btn{
-  font-size: 1.6rem;
-  padding: 0 12px;
+.add-btn {
+  font-size: 1.4rem;
+  padding: 0 16px;
   border-radius: 4px;
   color: #282c34;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
-  font-family: 'Bungee',sans-serif;
-background: var(--main-blue-color);
-border:unset;
-outline: unset;
+  font-family: "Bungee", sans-serif;
+  background: var(--main-blue-color);
+  border: unset;
+  outline: unset;
+}
+
+.add-btn:hover {
+  background-color: hsl(193, 95%, 60%);
+}
+
+.todos {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo {
+  position: relative;
+  flex: 1 0 auto;
+  text-align: center;
+  min-height: 34px;
+  margin: 16px 0 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-bottom: 1px solid hsla(193, 95%, 20%, 0.2);
+}
+
+.todo-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  letter-spacing: 1px;
 }
