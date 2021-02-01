@@ -1,8 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Homenaje&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Open+Sans:wght@300;400;600;700&display=swap');
 
 * {
   box-sizing: border-box;
 }
+
+:root {
+  --main-blue-color: #61dafb;
+}
+
+.main-blue-color {
+  color: var(--main-blue-color);
+}
+
 html {
   font-size: 10px;
 }
@@ -12,7 +21,7 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background: #20232A;
+  background: #20232a;
   height: 100vh;
 }
 
@@ -31,7 +40,38 @@ html {
   padding: 32px;
 }
 
-.frame{
-  border: 1px solid #61DAFB;
+.frame {
+  border: 1px solid hsl(193, 95%, 20%);
   height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+}
+
+.header-title {
+  flex: 1;
+  text-align: center;
+  color: #fff;
+  font-size: 3.6rem;
+  font-family: "Bungee", sans-serif;
+  text-transform: lowercase;
+  letter-spacing: 2px;
+}
+
+.header-btn {
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  font-family: "Bungee", sans-serif;
+  padding: 24px;
+  background: unset;
+  border: unset;
+  outline: unset;
+}
+
+.header-btn.clear{
+color: #fb6194;
 }
